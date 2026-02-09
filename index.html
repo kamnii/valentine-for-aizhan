@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Для Айжанки 💕</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- Шапка -->
+    <div class="header">
+      <div class="timer">
+        <i class="fas fa-calendar-heart"></i>
+        <span>Уже месяц как общаемся</span>
+      </div>
+    </div>
+
+    <!-- Основной контент -->
+    <div class="main-content">
+      <!-- GIF -->
+      <div class="gif-container">
+        <img src="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif" 
+             class="gif" 
+             id="beforeGif">
+        <img src="https://media.giphy.com/media/26BRv0ThflsHCqDrG/giphy.gif" 
+             class="gif hidden" 
+             id="afterGif">
+      </div>
+
+      <!-- Вопрос -->
+      <div class="question-box">
+        <h1 id="question">
+          <span class="greeting">Айжанка 😊</span>
+          <span class="main-text">У меня к тебе важный вопрос...</span>
+        </h1>
+        
+        <p id="subtext">
+          Мы общаемся уже целый месяц, и за это время мне с тобой стало так тепло и интересно.
+          Твоё чувство юмора, твои кружки, наше общение... Всё это заставляет меня улыбаться каждый день 😊
+          <br><br>
+          <strong>Будешь моей Валентинкой?</strong>
+        </p>
+      </div>
+
+      <!-- Кнопки -->
+      <div class="buttons">
+        <button id="yesBtn" class="btn-yes pulse">
+          <span class="btn-text">Да, конечно! 💛</span>
+        </button>
+        <button id="maybeBtn" class="btn-maybe">
+          <span class="btn-text">Может быть... 🙃</span>
+        </button>
+      </div>
+
+      <!-- Воспоминания -->
+      <div class="memories">
+        <div class="memory-item">
+          <i class="fas fa-laugh-beam"></i>
+          <span>Наши шутки</span>
+        </div>
+        <div class="memory-item">
+          <i class="fas fa-comment-dots"></i>
+          <span>Ночные разговоры</span>
+        </div>
+        <div class="memory-item">
+          <i class="fas fa-feather-alt"></i>
+          <span>Лёгкое общение</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Подсказка -->
+    <div class="swipe-hint" id="swipeHint">
+      <i class="fas fa-hand-point-up"></i>
+      <p>Выбери ответ! 👆</p>
+    </div>
+  </div>
+
+  <!-- Конфетти -->
+  <canvas id="confettiCanvas"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
