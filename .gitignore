@@ -1,0 +1,12 @@
+# PyCharm
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+# Temporary files
+*.log
+*.tmp
+__pycache__/
+*.pyc
